@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>How to handle image with css ?</title>
+
+    <style>
+      body {
+        padding: 0px 200px;
+      }
+
+      .container__images {
+        margin-top: 2rem;
+        height: 700px;
+      }
+
+      .container__line {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+      }
+
+      .item {
+        width: 31%;
+        height: 300px;
+        overflow: hidden;
+      }
+
+      .item img {
+        width: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+        transition: ease-in-out 3s;
+      }
+
+      .item img:hover {
+        transform: translateY(calc(-100% + 300px));
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container__images">
+      <div class="container__line">
+        <div class="item">
+          <img
+            src="https://kouyatekarim.netlify.app/res/images/image1-hover.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://kouyatekarim.netlify.app/res/images/image2-hover.webp"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://kouyatekarim.netlify.app/res/images/image3-hover.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container__line">
+        <div class="item">
+          <img
+            src="https://kouyatekarim.netlify.app/res/images/image4-hover.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://kouyatekarim.netlify.app/res/images/image5-hover.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://kouyatekarim.netlify.app/res/images/image6-hover.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
